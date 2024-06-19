@@ -10,14 +10,38 @@
     <title>Document</title>
 </head>
 
-.
+
 
 <body>
+    <header>
+        <div class="container">
+            <div class="row display: flex justify-content: start">
+                <div class="col-auto">
+                    <img src="./img/duck.png" alt="">
+                </div>
+                <div class="col-auto">
+                    <nav>
+                        <a href="">Catalogo libri</a>
+                        <a href="">Anagrafica utenti</a>
+                        <a href="">Storico Prestiti</a>
+                        <a href="">Help</a>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="py-5">
             <div class="container">
-                <h1>Catalogo libri</h1>
-                <button type="button" class="btn btn-primary" id="liveAlertBtn">Aggiungi libro</button>
+                <div class="row">
+                    <div class="col-6 d-flex justify-content: end align-items: end">
+                        <h1>Catalogo libri</h1>
+                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Aggiungi libro</button>
+                    </div>
+
+                </div>
+
             </div>
         </section>
         <section class="py-1">
@@ -68,7 +92,7 @@
                                 <td><span class="badge text-bg-danger">non disponibile</td>
                                 <td><i class="bi bi-brush"></i><i class="bi bi-calendar2-x"></i></td>
                             </tr>
-                            ù<tr>
+                            <tr>
                                 <th scope="row">Shining</th>
                                 <td>-</td>
                                 <td><span class="badge text-bg-success">disponibile</td>
