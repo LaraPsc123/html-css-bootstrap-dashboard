@@ -13,18 +13,30 @@
 
 
 <body>
-    <header>
+    <header class="page-header bg-dark">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row">
                 <div class="col-auto">
-                    <img src="./img/duck.png" alt="">
+                    <img src="./img/duck.png" alt="" width="60" height="50">
                 </div>
                 <div class="col-auto">
-                    <nav>
-                        <a href="">Catalogo libri</a>
-                        <a href="">Anagrafica utenti</a>
-                        <a href="">Storico Prestiti</a>
-                        <a href="">Help</a>
+                    <nav class="navbar navbar-expand-lg text-white">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="./">Catalogo libri</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                <a href="./html-css-form/contact.html">Nuovo libro</a>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active" aria-current="page" href="#">Anagrafica utenti</a>
+                                    <a class="nav-link" href="#">Storico prestiti</a>
+                                    <a class="nav-link" href="#">Help</a>
+                                </div>
+                            </div>
+                        </div>
                     </nav>
 
                 </div>
@@ -138,65 +150,9 @@
                     </table>
                 </div>
         </section>
-
-
-        <!-- form-->
-        <!-- intestazione pagina-->
-        <header class="page-header py-5">
-            <div class="container py-4">
-                <h1>Nuovo Libro</h1>
-            </div>
-            <!-- sezione nome e cognome-->
-            <section>
-                <div class="container">
-                    <form class="row g-3 py-2">
-                        <div class="col-6">
-                            <label for="inputEmail4" class="form-label">Nome Autore</label>
-                            <input type="nome-autore" name="nome-autore" class="form-control"
-                                placeholder="Inserisci il nome dell'autore" id="inputEmail4" required>
-                        </div>
-                        <div class="col-6">
-                            <label for="inputPassword4" class="form-label">Cognome Autore</label>
-                            <input type="cognome-autore" name="cognome-autore" class="form-control"
-                                placeholder="Inserisci il cognome dell'autore" id="inputPassword4" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">Titolo</label>
-                            <input type="titolo" name="titolo" class="form-control" id="inputAddress"
-                                placeholder="Inserisci il titolo del libro" required>
-                        </div>
-                        <div class="col-4">
-                            <label for="inputState" class="form-label">Genere</label>
-                            <select id="inputState" class="form-select" required>
-                                <option selected>Scegli il genere</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="col-4">
-                            <label for="inputCity" class="form-label">Anno di pubblicazione</label>
-                            <input type="text" name="anno-di-pubblicazione" class="form-control" id="inputCity"
-                                placeholder="Inserisci l'anno">
-                        </div>
-                        <div class="col-4">
-                            <label for="inputZip" class="form-label">ISBN#</label>
-                            <input type="text" name="isbn#" class="form-control" id="inputZip"
-                                placeholder="Inserisci il codice isbn#">
-                        </div>
-                </div>
-
-
-
-                </div>
-                </div>
-            </section>
-
-        </header>
-
     </main>
     <!-- alla fine della pagina inseriamo il javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
-
-</html>
